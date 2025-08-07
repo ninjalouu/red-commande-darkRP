@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestions RED COMMAND RP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📌 Suggestions RED COMMAND RP</h1>
+  <button id="login-btn">Se connecter avec Google</button>
+  <p id="user-name"></p>
+
+  <form id="suggest-form" style="display: none;">
+    <textarea id="suggest-text" placeholder="Votre suggestion..."></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <h2>Suggestions publiées</h2>
+  <div id="suggestions-list"></div>
+
+  <script type="module" src="firebase.js"></script>
+</body>
+</html>
