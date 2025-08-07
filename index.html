@@ -1,25 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suggestions RED COMMAND RP</title>
+  <title>Accueil - Red Command DarkRP</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>📌 Suggestions RED COMMAND RP</h1>
-  <button id="login-btn">Se connecter avec Google</button>
-  <p id="user-name"></p>
-
-  <form id="suggest-form" style="display: none;">
-    <textarea id="suggest-text" placeholder="Votre suggestion..."></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-
-  <h2>Suggestions publiées</h2>
-  <div id="suggestions-list"></div>
-
-  <script type="module" src="firebase.js"></script>
+  <header>
+    <h1>Red Command DarkRP</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="reglement.html">Règlement</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+  <main>
+    <section class="menu-deroulant">
+      <details open>
+        <summary>📜 Description du serveur</summary>
+        <p>Bienvenue sur Red Command DarkRP, un serveur RP basé sur l’univers de SCP et GMod. 
+        Rejoignez une communauté active, vivez des aventures intenses, et plongez dans une ambiance sombre et mystérieuse.</p>
+      </details>
+      <details>
+        <summary>🤝 Rejoins-nous</summary>
+        <p>Notre communauté t'attend sur Discord pour discuter, proposer des idées et participer à l'évolution du serveur !</p>
+        <a href="https://discord.gg/NuHZzpGJJU" target="_blank">🔗 Rejoindre le Discord</a>
+      </details>
+    </section>
+  </main>
 </body>
 </html>
