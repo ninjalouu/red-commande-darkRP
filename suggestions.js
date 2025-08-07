@@ -9,6 +9,6 @@ loginBtn.onclick = () => {
       alert("Connecté en tant que " + user.displayName);
     })
     .catch(error => {
-      console.error("Erreur connexion Google :", error);
+      console.error("Erreur de connexion :", error);
     });
 };
