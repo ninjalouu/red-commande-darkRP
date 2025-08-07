@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestions – RED COMMAND RP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📌 Suggestions RED COMMAND RP</h1>
+    <div>
+      <button id="login">Se connecter avec Google</button>
+      <button id="logout" style="display:none;">Déconnexion</button>
+    </div>
+    <div id="user-info"></div>
+  </header>
+
+  <main>
+    <section id="form-section" style="display:none;">
+      <h2>Soumettre une suggestion</h2>
+      <form id="suggest-form">
+        <input type="text" id="title" placeholder="Titre" required />
+        <select id="category" required>
+          <option value="">Catégorie</option>
+          <option value="RP">RP</option>
+          <option value="Modération">Modération</option>
+          <option value="Discord">Discord</option>
+          <option value="Autre">Autre</option>
+        </select>
+        <textarea id="content" placeholder="Explique ta suggestion" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <section id="suggestions">
+      <h2>Suggestions publiées</h2>
+      <div id="suggestion-list"></div>
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
+  <script src="suggestions.js"></script>
+</body>
+</html>
