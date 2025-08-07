@@ -1,4 +1,3 @@
-
 // Configuration Firebase pour RED COMMAND RP
 const firebaseConfig = {
   apiKey: "AIzaSyBX8O16331ikac8PQ_biEu8c1KTGoA6Fhk",
